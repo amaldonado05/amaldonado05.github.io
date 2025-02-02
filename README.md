@@ -1,4 +1,6 @@
 # amaldonado.github.io #
 
-:: **WELCOME TO MY REPOSITORY** ::  
->>> I hope you enjoy exploring my projects <<<
+## -=- Welcome To My Repository! -=-
+〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰
+### Date Of Creation: December 26, 2024
+〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰
