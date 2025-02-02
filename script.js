@@ -32,20 +32,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     typeEffect();
 
-    const jumpToAnswersLink = document.querySelector('.scroll-down-text');
-    jumpToAnswersLink.addEventListener('click', function (event) {
-        event.preventDefault();  
-        const target = document.querySelector('#guide-questions');
-        target.scrollIntoView({ behavior: 'smooth' });
+    const redirectButtons = document.querySelectorAll('.redirect-button');
+    redirectButtons.forEach(button => {
+        button.style.backgroundColor = "#808080";
+        button.style.color = "white";
     });
 });
 
 window.onscroll = function () {
     let button = document.getElementById("back-to-top");
     let scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    let docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    
-    if (scrollPosition > docHeight - 100) { 
+    let cssTasks = document.getElementById("css-tasks");
+
+    if (scrollPosition > cssTasks.offsetTop - window.innerHeight / 2) { 
         button.style.opacity = "1";
         button.style.visibility = "visible";
     } else {
@@ -56,4 +55,12 @@ window.onscroll = function () {
 
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    window.scrollTo({
+        top: section.offsetTop - 60,
+        behavior: 'smooth'
+    });
 }

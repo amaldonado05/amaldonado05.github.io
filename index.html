@@ -1,100 +1,132 @@
+<!-- © 2025 Alvaro Z. Maldonado | All rights reserved.-->
+<!-- All content on this page is the intellectual property of Alvaro Z. Maldonado. 
+Redistribution or use of this content without explicit permission is strictly prohibited. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maldonado Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maldonado Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Top Left Text -->
-    <div class="surprise-container surprise-top-left">
+  <div class="surprise-container surprise-top-left">
     <a href="https://youtu.be/dQw4w9WgXcQ" class="surprise-text" target="_blank">
-        Click on this for a surprise!
+      Click on this for a surprise!
     </a>
-    </div>
-
-    <!-- Jump To Answers -->
-    <div class="surprise-container scroll-down-container">
-    <a class="scroll-down-text" href="#guide-questions">
-        Jump To Answers
-    </a>
-    </div>  
-
-    <!-- Header Section -->
-    <header id="header">
-        <h1 class="glitch" id="main-title">Hi! I am Alvaro Z. Maldonado! <span class="glitch-symbol"></span></h1>
-    </header>
-
-    <button id="back-to-top" onclick="scrollToTop()">↑ Back to Top</button>
-
-    <div class="copyright-notice">
-        © 2025 Alvaro Z. Maldonado | All rights reserved.
-    </div>
-    
-
-    <!-- Main Content -->
-<main id="main-content">
-
-    <!-- HTML Tasks Section -->
+  </div>
+  <header id="header">
+    <h1 class="glitch" id="main-title">
+      Hi! I am Alvaro Z. Maldonado! <span class="glitch-symbol"></span>
+    </h1>
+  </header>
+  <button id="back-to-top" onclick="scrollToTop()">↑ Back to Top</button>
+  <div class="copyright-notice">
+    © 2025 Alvaro Z. Maldonado | All rights reserved.
+  </div>
+  <div class="redirect-buttons">
+    <button class="redirect-btn" onclick="scrollToSection('html-tasks')">HTML Tasks</button>
+    <button class="redirect-btn" onclick="scrollToSection('css-tasks')">CSS Tasks</button>
+    <button class="redirect-btn" onclick="scrollToSection('javascript-tasks')">JavaScript Tasks</button>
+    <button class="redirect-btn" onclick="scrollToSection('other-tasks')">Other Tasks</button>
+    <button class="redirect-btn" onclick="scrollToSection('certificates')">Certificates</button>
+    <button class="redirect-btn" onclick="scrollToSection('guide-questions')">Guide Questions</button>
+  </div>
+  <main id="main-content">
     <section class="task-section" id="html-tasks">
-        <h2 tabindex="0" id="html-tasks-title">💻 · 𝐇𝐓𝐌𝐋 𝐓𝐀𝐒𝐊𝐒 · 💻</h2>
-        <ul id="html-tasks-list">
-            <li><a href="MaldonadoExplorePHTours.html">Explore PH Tours</a></li>
-            <li><a href="MaldonadoCourseSchedule.html">Second Term Course Schedule</a></li>
-        </ul>
+      <h2 tabindex="0" id="html-tasks-title">💻 · 𝐇𝐓𝐌𝐋 𝐓𝐀𝐒𝐊𝐒 · 💻</h2>
+      <ul id="html-tasks-list">
+        <li><a href="MaldonadoExplorePHTours.html">Explore PH Tours</a></li>
+        <li><a href="MaldonadoCourseSchedule.html">Second Term Course Schedule</a></li>
+      </ul>
     </section>
-
-    <!-- CSS Tasks Section -->
     <section class="task-section" id="css-tasks">
-        <h2 tabindex="0" id="css-tasks-title">🎨 · 𝐂𝐒𝐒 𝐓𝐀𝐒𝐊𝐒 · 🎨</h2>
-        <ul id="css-tasks-list">
-         <li><a href="MALDONADO_W5_CSS_Act1/index.html">CSS Act #1</a></li>
-            <li><a href="MALDONADO_W5_CSS_Act2/index.html">CSS Act #2</a></li>
-     </ul>
+      <h2 tabindex="0" id="css-tasks-title">🎨 · 𝐂𝐒𝐒 𝐓𝐀𝐒𝐊𝐒 · 🎨</h2>
+      <ul id="css-tasks-list">
+        <li><a href="MALDONADO_W5_CSS_Act1/index.html">CSS Act #1</a></li>
+        <li><a href="MALDONADO_W5_CSS_Act2/index.html">CSS Act #2</a></li>
+      </ul>
     </section>
-
-    <!-- JavaScript Tasks Section -->
     <section class="task-section" id="javascript-tasks">
-        <h2 tabindex="0" id="js-tasks-title">☕ · 𝐉𝐀𝐕𝐀𝐒𝐂𝐑𝐈𝐏𝐓 𝐓𝐀𝐒𝐊𝐒 · ☕</h2>
-        <ul id="js-tasks-list">
-            <li><a href="MALDONADO_A224_JS_Act01/index.html"> JS Act #1</a></li>
-            <li><a href="MALDONADO_A224_JS_Act02/index.html">JS Act #2</a></li>
-        </ul>
+      <h2 tabindex="0" id="js-tasks-title">☕ · 𝐉𝐀𝐕𝐀𝐒𝐂𝐑𝐈𝐏𝐓 𝐓𝐀𝐒𝐊𝐒 · ☕</h2>
+      <ul id="js-tasks-list">
+        <li><a href="MALDONADO_A224_JS_Act01/index.html">JS Act #1</a></li>
+        <li><a href="MALDONADO_A224_JS_Act02/index.html">JS Act #2</a></li>
+      </ul>
     </section>
-
-    <!-- Other Tasks Section -->
     <section class="task-section" id="other-tasks">
-        <h2 tabindex="0" id="other-tasks-title">💾 · 𝐎𝐓𝐇𝐄𝐑 𝐓𝐀𝐒𝐊𝐒 𝐌𝐀𝐃𝐄 𝐔𝐒𝐈𝐍𝐆 𝐇𝐓𝐌𝐋, 𝐉𝐒, 𝐂𝐒𝐒 · 💾</h2>
-        <h4 id="cgc-projects-title">❗❗ · 🇨​​🇬​​🇨​ ​🇸​​🇹​​🇦​​🇳​​🇩​​🇸​ ​🇫​​🇴​​🇷​ ​🇨​​🇴​​🇲​​🇵​​🇺​​🇹​​🇪​​🇷​ ​🇬​​🇷​​🇦​​🇵​​🇭​​🇮​​🇨​ ​🇵​​🇷​​🇴​​🇬​​🇷​​🇦​​🇲​​🇲​​🇮​​🇳​​🇬 ·​ ❗❗​</h4>
-        <ul id="other-tasks-list">
-            <li><a href="https://codepen.io/Askefise/pen/vYqbBmg">CGC Project #1</a></li>
-            <li><a href="https://github.com/amaldonado05/M2Q2MALDONADO">CGC Project #2</a></li>
-            <li><a href="https://github.com/amaldonado05/MODULE2-Exam-Maldonado">CGC Project #3</a></li>
-            <li><a href="https://github.com/amaldonado05/M3-Q1-MALDONADO">CGC Project #4</a></li>
-            <li><a href="https://github.com/amaldonado05/M3-Q2-MALDONADO">CGC Project #5</a></li>
-            <li><a href="https://github.com/amaldonado05/M2-Q3-MALDONADO">CGC Project #6</a></li>
-            <li><a href="https://github.com/amaldonado05/M3-EXAM-MALDONADO">CGC Project #7</a></li>
-        </ul>
+      <h2 tabindex="0" id="other-tasks-title">
+        💾 · 𝐎𝐓𝐇𝐄𝐑 𝐓𝐀𝐒𝐊𝐒 𝐌𝐀𝐃𝐄 𝐔𝐒𝐈𝐍𝐆 𝐇𝐓𝐌𝐋, 𝐉𝐒, 𝐂𝐒𝐒 · 💾
+      </h2>
+      <h4 id="cgc-projects-title">
+        ❗❗ · 🇨​​🇬​​🇨​ ​🇸​​🇹​​🇦​​🇳​​🇩​​🇸​ ​🇫​​🇴​​🇷​ ​🇨​​🇴​​🇲​​🇵​​🇺​​🇹​​🇪​​🇷​ ​🇬​​🇷​​🇦​​🇵​​🇭​​🇮​​🇨​ ​🇵​​🇷​​🇴​​🇬​​🇷​​🇦​​🇲​​🇲​​🇮​​🇳​​🇬 ·​ ❗❗​
+      </h4>
+      <ul id="other-tasks-list">
+        <li><a href="https://codepen.io/Askefise/pen/vYqbBmg">CGC Project #1</a></li>
+        <li><a href="https://github.com/amaldonado05/M2Q2MALDONADO">CGC Project #2</a></li>
+        <li><a href="https://github.com/amaldonado05/MODULE2-Exam-Maldonado">CGC Project #3</a></li>
+        <li><a href="https://github.com/amaldonado05/M3-Q1-MALDONADO">CGC Project #4</a></li>
+        <li><a href="https://github.com/amaldonado05/M3-Q2-MALDONADO">CGC Project #5</a></li>
+        <li><a href="https://github.com/amaldonado05/M2-Q3-MALDONADO">CGC Project #6</a></li>
+        <li><a href="https://github.com/amaldonado05/M3-EXAM-MALDONADO">CGC Project #7</a></li>
+      </ul>
     </section>
-
-    <!-- Guide Questions Section -->
+    <section class="task-section" id="certificates">
+      <h2 tabindex="0" id="certificates-title">✉️ · 𝐂𝐄𝐑𝐓𝐈𝐅𝐈𝐂𝐀𝐓𝐄𝐒 · ✉️</h2>
+      <div id="certificates-list">
+        <div class="certificate-container">
+          <a href="https://www.credly.com/badges/420d89cf-11c9-4707-87ae-3e53605beaa5/linked_in?t=sid3oc" target="_blank">
+            <img src="IMAGES/MOS_Excel.png" alt="Microsoft Office Specialist Certificate" class="certificate-img">
+            <div class="certificate-content">
+              <h3>Microsoft Office Specialist Certificate</h3>
+            </div>
+          </a>
+        </div>
+        <div class="certificate-container">
+          <a href="https://www.linkedin.com/learning/certificates/b2be5a8df6156347246892c6dfc9bb45bd44ba3cb0a9df29a7fef98f516ceab8?trk=share_certificate" target="_blank">
+            <img src="IMAGES/java_cert.png" alt="Java 8 Essential Training Certificate" class="certificate-img">
+            <div class="certificate-content">
+              <h3>Java 8 Essential Training Certificate</h3>
+            </div>
+          </a>
+        </div>
+        <div class="certificate-container">
+          <a href="https://coursera.org/share/cb3b1f013be97d13e60d86e46de42b91" target="_blank">
+            <img src="IMAGES/UX.png" alt="UX Design Certificate" class="certificate-img">
+            <div class="certificate-content">
+              <h3>UX Design Certificate</h3>
+            </div>
+          </a>
+        </div>
+        <div class="certificate-container">
+          <a href="https://www.coursera.org/user/19083edab26509027d2a810ae4b28b3a" target="_blank">
+            <img src="IMAGES/unity.png" alt="Game Design and Development Certificate" class="certificate-img">
+            <div class="certificate-content">
+              <h3>Game Design and Development Certificate</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
     <section class="task-section" id="guide-questions">
-        <h2>📖 · 𝐆𝐔𝐈𝐃𝐄 𝐐𝐔𝐄𝐒𝐓𝐈𝐎𝐍𝐒 𝐅𝐎𝐑 𝐃𝐈𝐆𝐈𝐓𝐈𝐀𝐋 𝐂𝐎𝐔𝐑𝐒𝐄 𝐏𝐎𝐑𝐓𝐅𝐎𝐋𝐈𝐎 · 📖</h2>
-        <ol>
-            <li>How does your portfolio show your skills in HTML, CSS, and JavaScript as a CS, IS, or EMC student?</li>
-            <br>
-            <p><u>Well, just look at it. I loved making this, and I even went out of my way to learn more advanced things that were not tackled in our class to learn specifically how to be able to add all these effects that you see. It shows my skill as an EMC student because you can really see how much I love making Front End designs.</u></p>
-            <br>
-            <li>What projects, awards, and assignments highlight your progress in the program?</li>
-            <br>
-            <p><u>Well, the ones that really show my progress in HTML, CSS, and JS would be the Course Schedule that we made before. The ExploreToursPH was also very fun to learn, but this was back when I was still very new to HTML, CSS, and JS. I am very proud of myself for how far I've came in these topics.</u></p>
-            <br>
-            <li>How does your portfolio creatively showcase your web programming knowledge and experiences?</li>
-            <br>
-            <p><u>It showscases it by showing the various designs I used and the effects you can see when hovering over items. I really hope you enjoyed visiting my portfolio.</u></p>
-        </ol>
-        <script src="script.js"></script>
+      <h2>📖 · 𝐆𝐔𝐈𝐃𝐄 𝐐𝐔𝐄𝐒𝐓𝐈𝐎𝐍𝐒 𝐅𝐎𝐑 𝐃𝐈𝐆𝐈𝐓𝐈𝐀𝐋 𝐂𝐎𝐔𝐑𝐒𝐄 𝐏𝐎𝐑𝐓𝐅𝐎𝐋𝐈𝐎 · 📖</h2>
+      <ol>
+        <li>How does your portfolio show your skills in HTML, CSS, and JavaScript as a CS, IS, or EMC student?</li>
+        <br>
+        <p><u>Well, just look at it. I loved making this, and I even went out of my way to learn more advanced things that were not tackled in our class to learn specifically how to be able to add all these effects that you see. It shows my skill as an EMC student because you can really see how much I love making Front End designs.</u></p>
+        <br>
+        <li>What projects, awards, and assignments highlight your progress in the program?</li>
+        <br>
+        <p><u>Well, the ones that really show my progress in HTML, CSS, and JS would be the Course Schedule that we made before. The ExploreToursPH was also very fun to learn, but this was back when I was still very new to HTML, CSS, and JS. I am very proud of myself for how far I've came in these topics.</u></p>
+        <br>
+        <li>How does your portfolio creatively showcase your web programming knowledge and experiences?</li>
+        <br>
+        <p><u>It showcases it by showing the various designs I used and the effects you can see when hovering over items. I really hope you enjoyed visiting my portfolio.</u></p>
+      </ol>
+      <script src="script.js"></script>
     </section>
-</main>
+  </main>
+</body>
+</html>
