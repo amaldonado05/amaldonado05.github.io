@@ -1,5 +1,4 @@
-# amaldonado.github.io
-                          ___                  __                                 
-|  |  _ |  _  _   _   _    |   _    |\/|      |__)  _  _   _   _ . |_  _   _    | 
-|/\| (- | (_ (_) ||| (-    |  (_)   |  | \/   | \  (- |_) (_) _) | |_ (_) |  \/ . 
-                                         /            |                      /  
+# amaldonado.github.io #
+
+:: **WELCOME TO MY REPOSITORY** ::  
+>>> I hope you enjoy exploring my projects <<<
