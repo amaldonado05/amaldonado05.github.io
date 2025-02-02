@@ -1,3 +1,5 @@
 # amaldonado.github.io
-
-### --- Welcome to my repository! I hope you enjoy my work. ---
+                          ___                  __                                 
+|  |  _ |  _  _   _   _    |   _    |\/|      |__)  _  _   _   _ . |_  _   _    | 
+|/\| (- | (_ (_) ||| (-    |  (_)   |  | \/   | \  (- |_) (_) _) | |_ (_) |  \/ . 
+                                         /            |                      /  
