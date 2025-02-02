@@ -1,274 +1,299 @@
 html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: 'VT323', monospace;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: #fff;
-    text-align: center;
-    background-image: url('IMAGES/matrix.gif');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  
-  @keyframes glitch {
-    0% { transform: translate(0); opacity: 1; }
-    15% { transform: translate(-2px, 2px); opacity: 0.85; }
-    30% { transform: translate(2px, -2px); opacity: 1; }
-    45% { transform: translate(-3px, -1px); opacity: 0.9; }
-    60% { transform: translate(3px, 1px); opacity: 1; }
-    75% { transform: translate(-1px, 3px); opacity: 0.85; }
-    100% { transform: translate(0); opacity: 1; }
-  }
-  
-  @keyframes glitchText {
-    0% { text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff; }
-    20% { text-shadow: -2px -2px 0px #ff00ff, 2px 2px 0px #00ffff; }
-    40% { text-shadow: 2px -2px 0px #ff00ff, -2px 2px 0px #00ffff; }
-    60% { text-shadow: -3px 3px 0px #ff00ff, 3px -3px 0px #00ffff; }
-    80% { text-shadow: 3px 1px 0px #ff00ff, -3px -1px 0px #00ffff; }
-    100% { text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff; }
-  }
-  
-  @keyframes blink {
-    50% { opacity: 0; }
-  }
-  
-  header {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    color: #fff;
-    padding: 30px 20px;
-    font-size: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  }
-  
-  header h1 {
-    font-size: 30px;
-    animation: glitch 0.4s infinite alternate, glitchText 0.2s infinite alternate;
-  }
-  
-  #back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #00ff0d;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 50px;
-    box-shadow: 0px 4px 10px rgba(0, 255, 13, 0.5);
-    font-family: 'VT323', monospace;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-  }
-  
-  #back-to-top:hover {
-    background: #008c0d;
-    color: white;
-    box-shadow: 0px 4px 15px rgba(0, 255, 13, 0.8);
-  }
-  
-  .surprise-container {
-    position: absolute;
-    z-index: 100;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .surprise-top-left {
-    top: 20px;
-    left: 20px;
-  }
-  
-  .surprise-text {
-    font-family: 'VT323', monospace;
-    font-size: 20px;
-    color: #00ff0d;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-  }
-  
-  .surprise-text:hover,
-  .scroll-down-text:hover {
-    color: #00ff0d;
-    text-shadow: 0px 0px 8px #00ff0d, 0px 0px 15px rgba(255, 255, 255, 0.8);
-  }
-  
-  .copyright-notice {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-family: 'VT323', monospace;
-    font-size: 18px;
-    color: #00ff0d;
-    text-shadow: 0px 0px 8px #00ff0d, 0px 0px 15px rgba(255, 255, 255, 0.8);
-    background: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .task-section {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
-    margin: 20px auto 30px auto; 
-    padding: 20px;
-    width: 85%;
-    max-width: 800px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+  scroll-behavior: smooth;
+}
 
-  #guide-questions p {
-    font-size: 1.25rem; 
-  }
+body {
+  font-family: 'VT323', monospace;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  text-align: center;
+  background-image: url('IMAGES/matrix.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
-  #guide-questions ol li {
-    font-size: 1.2rem; 
-  }
+@keyframes glitch {
+  0% { transform: translate(0); opacity: 1; }
+  15% { transform: translate(-2px, 2px); opacity: 0.85; }
+  30% { transform: translate(2px, -2px); opacity: 1; }
+  45% { transform: translate(-3px, -1px); opacity: 0.9; }
+  60% { transform: translate(3px, 1px); opacity: 1; }
+  75% { transform: translate(-1px, 3px); opacity: 0.85; }
+  100% { transform: translate(0); opacity: 1; }
+}
 
-  #guide-questions ol {
-    list-style-type: none;
-    padding-left: 0; 
-  }
-  
-  .task-section:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
-  }
-  
-  .task-section h2 {
-    transition: all 0.3s ease;
-    font-size: 1.5rem;
-  }
-  
-  .task-section:hover h2 {
-    animation: glitch 0.5s infinite alternate, glitchText 0.4s infinite alternate;
-  }
-  
-  .task-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .task-section ul li {
-    margin: 15px 0;
-    font-size: 1.5rem;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-  }
-  
-  .task-section ul li:hover {
-    color: #00ff0d;
-    text-shadow: 0px 0px 8px #00ff0d, 0px 0px 15px rgba(255, 255, 255, 0.8);
-  }
-  
-  #certificates {
-    text-align: center;
-  }
-  
-  #certificates h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #fff;
-  }
-  
-  #certificates-list {
+@keyframes glitchText {
+  0% { text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff; }
+  20% { text-shadow: -2px -2px 0px #ff00ff, 2px 2px 0px #00ffff; }
+  40% { text-shadow: 2px -2px 0px #ff00ff, -2px 2px 0px #00ffff; }
+  60% { text-shadow: -3px 3px 0px #ff00ff, 3px -3px 0px #00ffff; }
+  80% { text-shadow: 3px 1px 0px #ff00ff, -3px -1px 0px #00ffff; }
+  100% { text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff; }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 30px 20px;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+header h1 {
+  font-size: 30px;
+  animation: glitch 0.4s infinite alternate, glitchText 0.2s infinite alternate;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00ff0d;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgba(0, 255, 13, 0.5);
+  font-family: 'VT323', monospace;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+#back-to-top:hover {
+  background: #008c0d;
+  color: white;
+  box-shadow: 0px 4px 15px rgba(0, 255, 13, 0.8);
+}
+
+.surprise-container {
+  position: absolute;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.surprise-top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.surprise-text {
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  color: #00ff0d;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.surprise-text:hover,
+.scroll-down-text:hover {
+  color: #00ff0d;
+  text-shadow: 0px 0px 8px #00ff0d, 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+.copyright-notice {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  color: #00ff0d;
+  text-shadow: 0px 0px 8px #00ff0d, 0px 0px 15px rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.task-section {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  margin: 20px auto 30px auto; 
+  padding: 20px;
+  width: 85%;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#guide-questions p {
+  font-size: 1.25rem; 
+}
+
+#guide-questions ol li {
+  font-size: 1.2rem; 
+}
+
+#guide-questions ol {
+  list-style-type: none;
+  padding-left: 0; 
+}
+
+.task-section:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.task-section h2 {
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+}
+
+.task-section:hover h2 {
+  animation: glitch 0.5s infinite alternate, glitchText 0.4s infinite alternate;
+}
+
+.task-section ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; 
-    padding: 20px 0;
+    padding: 0;
+    list-style: none;
   }
   
-  .certificate-container {
-    width: 300px; 
+  .task-section ul li {
+    margin: 10px;
+    font-size: 1rem;
+    transition: none;
+  }
+
+
+#certificates {
+  text-align: center;
+}
+
+#certificates h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#certificates-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+  padding: 20px 0;
+}
+
+.certificate-container {
+  width: 300px; 
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin: 10px; 
+}
+
+.certificate-container:hover {
+  transform: scale(1.01); 
+}
+
+.certificate-img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.certificate-img:hover {
+  transform: scale(1.01); 
+}
+
+.certificate-content h3 {
+  font-size: 1.5rem;
+  color: #00ff0d;
+  margin-top: 10px;
+}
+
+.glitch-symbol {
+  animation: blink 0.8s infinite;
+}
+
+.glitch {
+  display: inline-block;
+  animation: glitch 0.6s infinite alternate, glitchText 0.3s infinite alternate;
+}
+
+a {
+  color: #00ff0d;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  text-shadow: 0px 0px 8px #00ff0d, 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+.redirect-buttons {
+  margin-top: 20px;
+}
+
+.redirect-btn {
+  background: rgba(37, 36, 36, 0.984);
+  color: #00ff0d;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.redirect-btn:hover {
+  background: rgba(0, 255, 13, 0.7);
+  transform: scale(1.1);
+}
+
+.redirect-btn:focus {
+  outline: none;
+}
+
+.project-container {
+    width: 200px;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(5px);
-    padding: 20px;
-    border-radius: 15px;
+    padding: 10px;
+    border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    margin: 10px; 
+    margin: 5px auto;
+  }
+
+  .project-container:hover {
+    transform: scale(1.01);
   }
   
-  .certificate-container:hover {
-    transform: scale(1.01); 
-  }
-  
-  .certificate-img {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-  }
-  
-  .certificate-img:hover {
-    transform: scale(1.01); 
-  }
-  
-  .certificate-content h3 {
-    font-size: 1.5rem;
+  .project-content h3 {
+    font-size: 1.3rem; 
     text-align: center;
     color: #00ff0d;
+    transition: text-shadow 0.3s ease;
   }
-  
-  .glitch-symbol {
-    animation: blink 0.8s infinite;
-  }
-  
-  .glitch {
-    display: inline-block;
-    animation: glitch 0.6s infinite alternate, glitchText 0.3s infinite alternate;
-  }
-  
-  a {
-    color: #00ff0d;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-  }
-  
-  a:hover {
+
+  .project-content h3:hover {
     text-shadow: 0px 0px 8px #00ff0d, 0px 0px 15px rgba(255, 255, 255, 0.8);
-  }
-  
-  .redirect-buttons {
-    margin-top: 20px;
-  }
-
-  .redirect-btn {
-    background: rgba(37, 36, 36, 0.984);
-    color: #00ff0d;
-    font-family: 'VT323', monospace;
-    font-size: 18px;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
-    border-radius: 8px;
-  }
-
-  .redirect-btn:hover {
-    background: rgba(0, 255, 13, 0.7);
-    transform: scale(1.1);
-  }
-
-  .redirect-btn:focus {
-    outline: none;
   }
