@@ -9,17 +9,34 @@
 </head>
 <body>
     <!-- Top Left Text -->
-    <a href="https://youtu.be/dQw4w9WgXcQ" class="surprise-text" target="_blank">Click on this for a surprise!</a>
-    <a class="scroll-down-text" href="#guide-questions">Jump To Answers</a>
+    <div class="surprise-container surprise-top-left">
+    <a href="https://youtu.be/dQw4w9WgXcQ" class="surprise-text" target="_blank">
+        Click on this for a surprise!
+    </a>
+    </div>
 
+    <!-- Jump To Answers -->
+    <div class="surprise-container scroll-down-container">
+    <a class="scroll-down-text" href="#guide-questions">
+        Jump To Answers
+    </a>
+    </div>  
 
     <!-- Header Section -->
     <header id="header">
         <h1 class="glitch" id="main-title">Hi! I am Alvaro Z. Maldonado! <span class="glitch-symbol"></span></h1>
     </header>
 
+    <button id="back-to-top" onclick="scrollToTop()">↑ Back to Top</button>
+
+    <div class="copyright-notice">
+        © 2025 Alvaro Z. Maldonado | All rights reserved.
+    </div>
+    
+
     <!-- Main Content -->
 <main id="main-content">
+
     <!-- HTML Tasks Section -->
     <section class="task-section" id="html-tasks">
         <h2 tabindex="0" id="html-tasks-title">💻 · 𝐇𝐓𝐌𝐋 𝐓𝐀𝐒𝐊𝐒 · 💻</h2>
@@ -78,5 +95,6 @@
             <br>
             <p><u>It showscases it by showing the various designs I used and the effects you can see when hovering over items. I really hope you enjoyed visiting my portfolio.</u></p>
         </ol>
+        <script src="script.js"></script>
     </section>
 </main>
