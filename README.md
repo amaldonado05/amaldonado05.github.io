@@ -1,7 +1,7 @@
-# amaldonado.github.io #
+# ✪✪✪ amaldonado.github.io ✪✪✪
 
-## -=-  ✪ Welcome To My Repository! ✪ -=-
+## -=-  【 Welcome To My Repository! 】 -=-
 
-### =+= ♛ Date Of Creation: December 26, 2024 ♛ =+=
+### =+= 《 Date Of Creation: December 26, 2024 》 =+=
 
 
