@@ -6,37 +6,41 @@
     <title>Explore PH Tours Landing Page</title>
     <style>
         img {
-            width: 100px; 
-            position: absolute; 
-            top: 15px;
-            left: 10px;
+            width: 100px;
+            vertical-align: middle; 
         }
         header {
             display: flex;
             align-items: center;
-            margin-left: 120px;
-            margin-top: 10px;
-            position: relative;
+            justify-content: space-between; 
             background-color: yellow;
             padding: 20px;
             border: 2px solid red;
+            position: relative;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
         }
         h1 {
-            margin: 0;
+            margin: 0 20px 0 0; 
+            font-size: 2rem;
         }
         h2 {
             margin: 0;
+            font-size: 1.2rem;
+            color: #000; 
         }
     </style>
 </head>
 <body>
-    <img src="IMAGES/cowl.png" alt="Cowl Logo">
-
     <!-- Header Section -->
     <header>
-        <div>
-            <h1>Explore PH Tours Landing Page</h1>
-            <h2>Your Gateway to the Philippines!</h2>
+        <div class="header-content">
+            <div>
+                <h1>Explore PH Tours Landing Page</h1>
+                <h2>Your Gateway to the Philippines!</h2>
+            </div>
         </div>
     </header>
     <br>
@@ -96,6 +100,6 @@
     <!-- Footer Section -->
     <h2 id="contact">Contact Us:</h2>
     <p>Follow us on Facebook, Instagram, and Twitter for more updates!</p>
-    <p>&copy; 2024 Explore PH Tours. All rights reserved.</p>
+    <p>© 2024 Explore PH Tours. All rights reserved.</p>
 </body>
 </html>
