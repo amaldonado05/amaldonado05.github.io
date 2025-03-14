@@ -298,7 +298,6 @@ a:hover {
     text-shadow: 0px 0px 8px #00ff0d, 0px 0px 15px rgba(255, 255, 255, 0.8);
   }
 
-/* Styling for the sub-task list under W8 Hands-on Activity */
 .sub-task-list {
   list-style: none;
   padding: 10px 0 0 0;
@@ -319,4 +318,42 @@ a:hover {
 
 .sub-task-list a:hover {
   text-shadow: 0px 0px 8px #00ff0d, 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+.guide-description {
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center; 
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.task-dropdown summary.dropdown-button {
+  font-family: 'VT323', monospace;
+  font-size: 1.3rem;
+  color: #00ff0d; 
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, text-shadow 0.3s ease; 
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  cursor: pointer;
+  text-decoration: none; 
+}
+
+.task-dropdown summary.dropdown-button:hover {
+  transform: scale(1.01);
+  text-shadow: 0px 0px 8px #00ff0d, 0px 0px 15px rgba(255, 255, 255, 0.8); 
+}
+
+.task-dropdown[open] summary.dropdown-button {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px 10px 0 0;
 }
